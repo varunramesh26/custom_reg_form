@@ -39,32 +39,27 @@ class ExtraInfo(models.Model):
 
     branch = models.CharField(
         verbose_name="Branch",
-        blank=True, 
         max_length=100,
     )
 
     enrollment_year = models.CharField(
         verbose_name="Enrollment Year",
         choices=enrollment_years, 
-        blank=True, 
         max_length=5,
     )
-    preferred_lang = models.CharField(
+    preferred_language = models.CharField(
         verbose_name="Preferred Language",
-        blank=True, 
         max_length=100,
     )
 
     preferred_multimedia = models.CharField(
         verbose_name="Preferred Multimedia",
-        blank=True, 
         max_length=100,
     )
 
     interests = models.CharField(
         verbose_name="Your Interests",
         choices=student_interests,
-        blank=True,
         max_length=100,
     )
 
